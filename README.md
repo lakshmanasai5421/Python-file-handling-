@@ -70,6 +70,7 @@ You can also specify the **encoding** explicitly, which is important for files w
 f = open("filename.txt", "r", encoding="utf-8")
 f.close()
 ```
+```
 
 ### Why Encoding Matters
 
