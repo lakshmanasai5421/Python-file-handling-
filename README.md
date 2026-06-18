@@ -42,13 +42,16 @@ Unlike variables that store data temporarily in memory, files allow data to pers
 The `open()` function is the gateway to file handling. It takes a filename and a mode, and returns a **file object** you can work with. Think of it like opening a physical folder — you need to specify which folder (filename) and what you intend to do with it (mode: read, write, etc.).
 
 ```python
-file = open("filename.txt", mode)
+f = open("filename.txt", mode)
+content = f.read()
+f.close()
 ```
 
 You can also specify the **encoding** explicitly, which is important for files with special characters (accents, emojis, non-English text):
 
 ```python
-file = open("filename.txt", "r", encoding="utf-8")
+f = open("filename.txt", "r", encoding="utf-8")
+f.close()
 ```
 
 > **Why encoding matters:** Without specifying `encoding="utf-8"`, Python uses the system's default encoding, which can vary between Windows, Mac, and Linux — leading to `UnicodeDecodeError` on some machines.
