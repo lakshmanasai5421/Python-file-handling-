@@ -60,7 +60,7 @@ open(filename, mode)
 * **mode**: Specifies how the file will be used
 
 ```
-
+----
 You can also specify the **encoding** explicitly, which is important for files with special characters (accents, emojis, non-English text):
 
 ```python
