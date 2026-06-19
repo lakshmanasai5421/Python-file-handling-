@@ -21,7 +21,7 @@ git init
 
 **2. Add Files to the Staging Area**
 Stages all project files for the next commit.
-
+Git uses a staging area to prepare files before committing them. The . means all files in the current directory.
 **Syntax:**
 
 ```bash
@@ -32,7 +32,7 @@ git add .
 
 **3. Commit Changes**
 Saves the staged changes with a message describing the update.
-
+A commit creates a snapshot of your changes and stores them in Git history.
 **Syntax:**
 
 ```bash
@@ -66,11 +66,11 @@ git remote add origin https://github.com/user/project.git
 
 **5. Push Code to GitHub**
 Uploads your local commits to the GitHub repository.
-
+origin refers to the remote GitHub repository, and feature-branch is the branch being pushed.
 **Syntax:**
 
 ```bash
-git push -u origin main
+git push -u origin master
 ```
 
 ---
